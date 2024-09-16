@@ -24,6 +24,11 @@
      <input type="text" placeholder="Number2" id="num2"> <br>
      <button id="btn" onclick="add()">ADD</button>
      <h1 id="result">Result is:</h1>
+
+     <!-- Task 2 -->
+      <br> <br>
+      <input type="text" name="" id="letter" onkeyup="update()">
+      <p id="value"></p>
     <script>
         // Event Handler Function
         function buttonClicked()
@@ -59,6 +64,15 @@
         }
 
         
+        // Task 2
+
+        var letter =document.getElementById("letter")
+        var value =document.getElementById("value")
+function update(){
+    value.textContent=letter.value
+}
+       
+
     </script>
 </body>
 </html>
