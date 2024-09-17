@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+     
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+     }
+        body {
+            font-family:'Times New Roman', Times, serif ;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+       
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+
+        table {
+            width: 50%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        td {
+            padding: 10px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        select {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        
+        button {
+            background-color: #4b9ef1;
+            color: rgb(247, 239, 239);
+            border: none;
+            padding: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2978f8;
+        }
+
+    
+        #resultTable {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #resultTable td, 
+        #resultTable th {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #resultTable th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-size: 18px;
+        }
+
+        #resultTable tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        #resultTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .remove {
+            background-color: #5b8eca;
+            color: rgb(16, 1, 1);
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .remove:hover {
+            background-color: #2d75e1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form action="">
+
+  
+    <table border="1">
+        <tr>
+         <td> <Label>Name</Label>  </td>  
+          <td> <input type="text" name="" id="fname"> </td>  
+
+        </tr>
+
+        <tr>
+          <td>  <label for="">Age</label> </td>
+           <td> <input type="number" name="" id="age"> </td>
+
+        </tr>
+
+        <tr>
+           <td> <label for="" id="gender">Gender</label> </td>
+           <td><input type="radio" name="gender" id="male">Male
+        <input type="radio" name="gender" id="female">Female
+        </td>
+        </tr>
+
+        <tr>
+            <td><label for="">Course</label></td>
+            <td><select name="" id="course">
+                <option value="MERN STACK">MERN STACK</option>
+                <option value="Javascript">Javascript</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+
+            </select></td>
+        </tr>
+
+        <tr>
+            <td> <Label>Email</Label>  </td>  
+             <td> <input type="email" name="" id="email"> </td>  
+   
+           </tr>
+           <tr >
+            <td colspan="2"><button id="btn" style="width: 100%;" >Save</button></td>
+
+           </tr>
+    </table>
+
+    
+
+</form>
+
+<br><br>
+<table border="2" id="resultTable">
+  
+    <tr>
+        <td >Name</td>
+        <td >Age</td>
+        <td>Course</td>
+        <td>Gender</td>
+        <td >Email</td>
+        <td>Action</td>
+    </tr>
+
+</table>
+
+<script src="main.js"></script>
+</body>
+</html>
