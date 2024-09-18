@@ -11,63 +11,33 @@
         padding: 0;
         box-sizing: border-box
      }
-        body {
-            font-family:'Times New Roman', Times, serif ;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
 
-       
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-
-
-        table {
-            width: 50%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        td {
-            padding: 10px;
-            text-align: left;
-            font-size: 16px;
-        }
-
-        input[type="text"],
-        input[type="number"],
-        input[type="email"],
-        select {
-            width: 95%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
+     .container {
+        display: flex;
+        justify-content: center;
+    
+     }
+    
         
         button {
-            background-color: #4b9ef1;
-            color: rgb(247, 239, 239);
+            background-color: #4CAF50;
+            color: white;
             border: none;
-            padding: 10px 0;
-            font-size: 16px;
+            padding: 10px;
+            font-size: 14px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #2978f8;
+            background-color: #45a049;
         }
 
-    
+       
         #resultTable {
             width: 80%;
             margin: 20px auto;
             border-collapse: collapse;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
         }
 
         #resultTable td, 
@@ -79,35 +49,26 @@
 
         #resultTable th {
             background-color: #f2f2f2;
-            color: #333;
-            font-size: 18px;
-        }
-
-        #resultTable tr:hover {
-            background-color: #f9f9f9;
-        }
-
-        #resultTable tr:nth-child(even) {
-            background-color: #f2f2f2;
         }
 
         .remove {
-            background-color: #5b8eca;
-            color: rgb(16, 1, 1);
+            background-color: #e74c3c;
+            color: white;
             border: none;
-            padding: 5px 10px;
+            padding: 5px;
             cursor: pointer;
         }
 
         .remove:hover {
-            background-color: #2d75e1;
+            background-color: #c0392b;
         }
     </style>
 </head>
 <body>
-    <h1>Student Form</h1>
+    <div class="container">
+   
     <form action="">
-
+        <h1>Student Form</h1>
   
     <table border="1">
         <tr>
@@ -153,6 +114,8 @@
     
 
 </form>
+
+</div>
 
 <br><br>
 <table border="2" id="resultTable">
